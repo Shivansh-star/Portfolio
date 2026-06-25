@@ -1,0 +1,151 @@
+.section-description {
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  font-size: 0.9rem;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 4px;
+}
+
+.project-card.large {
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.project-image-placeholder {
+  flex: 1;
+  background: #f1f5f9;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+}
+
+.mock-laptop {
+  width: 70%;
+  height: 60%;
+  background: #e2e8f0;
+  border: 8px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.project-info {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.project-header h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.project-header .year {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.project-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.project-bullets {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.project-bullets li {
+  margin-bottom: 0.4rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.project-tags span {
+  padding: 0.25rem 0.6rem;
+  background: #f1f5f9;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.projects-row-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.project-card.small {
+  padding: 2rem;
+}
+
+.more-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f8fafc;
+}
+
+.more-projects h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.more-projects p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent-blue);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .project-card.large {
+    flex-direction: column;
+  }
+  .projects-row-2 {
+    grid-template-columns: 1fr;
+  }
+}
